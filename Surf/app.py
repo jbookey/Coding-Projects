@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Surf Application in Progress! Thanks, Jack"
+    return render_template("home.html")
 
 if __name__ == "__main__":
     # Enable debug mode for development (auto-restarts on code changes)
